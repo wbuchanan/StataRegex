@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
+  <component name="GroovyCompilerProjectConfiguration">
+    <option name="invokeDynamic" value="true" />
+  </component>
+  <component name="JSHintConfiguration" version="2.8.0" use-config-file="false">
+    <option asi="true" />
+    <option bitwise="true" />
+    <option boss="true" />
+    <option browser="true" />
+    <option browserify="true" />
+    <option camelcase="true" />
+    <option couch="true" />
+    <option curly="true" />
+    <option debug="true" />
+    <option devel="true" />
+    <option dojo="true" />
+    <option elision="true" />
+    <option enforceall="true" />
+    <option eqeqeq="true" />
+    <option eqnull="true" />
+    <option es3="true" />
+    <option es5="true" />
+    <option esnext="true" />
+    <option evil="true" />
+    <option expr="true" />
+    <option forin="true" />
+    <option freeze="true" />
+    <option funcscope="true" />
+    <option futurehostile="true" />
+    <option gcl="true" />
+    <option globalstrict="true" />
+    <option immed="true" />
+    <option iterator="true" />
+    <option jasmine="true" />
+    <option jquery="true" />
+    <option lastsemic="true" />
+    <option latedef="false" />
+    <option laxbreak="true" />
+    <option laxcomma="true" />
+    <option loopfunc="true" />
+    <option maxerr="50" />
+    <option mocha="true" />
+    <option mootools="true" />
+    <option moz="true" />
+    <option multistr="true" />
+    <option newcap="true" />
+    <option noarg="true" />
+    <option nocomma="true" />
+    <option node="true" />
+    <option noempty="true" />
+    <option nomen="true" />
+    <option nonbsp="true" />
+    <option nonew="true" />
+    <option nonstandard="true" />
+    <option notypeof="true" />
+    <option noyield="true" />
+    <option onevar="true" />
+    <option passfail="false" />
+    <option phantom="true" />
+    <option plusplus="true" />
+    <option proto="true" />
+    <option prototypejs="true" />
+    <option qunit="true" />
+    <option quotmark="false" />
+    <option rhino="true" />
+    <option scripturl="true" />
+    <option shadow="true" />
+    <option shelljs="true" />
+    <option singleGroups="true" />
+    <option smarttabs="true" />
+    <option strict="true" />
+    <option sub="true" />
+    <option supernew="true" />
+    <option trailing="true" />
+    <option typed="true" />
+    <option undef="true" />
+    <option unused="false" />
+    <option validthis="true" />
+    <option white="false" />
+    <option withstmt="true" />
+    <option worker="true" />
+    <option wsh="true" />
+    <option yui="true" />
+  </component>
+  <component name="JsBowerSettings">
+    <exe-path>/usr/local/bin/bower</exe-path>
+    <config-path />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>W3CssValidation</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectResources">
+    <xml-schema-version>XMLSchema_1_1</xml-schema-version>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" assert-keyword="true" jdk-15="true" project-jdk-name="1.8 (1)" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ValidationConfiguration">
+    <option name="VALIDATE_ON_BUILD" value="true" />
+    <option name="VALIDATORS">
+      <map>
+        <entry key="EJB Validator" value="true" />
+        <entry key="Faces Validator" value="true" />
+        <entry key="FreeMarker" value="true" />
+        <entry key="Hibernate Validator" value="true" />
+        <entry key="JPA Validator" value="true" />
+        <entry key="Jasper Validator" value="true" />
+        <entry key="Spring Model Validator" value="true" />
+        <entry key="Spring Web Flow" value="true" />
+        <entry key="Struts 2 Model Validator" value="true" />
+        <entry key="Struts 2 Validation Model Validator" value="true" />
+        <entry key="Struts Model validator" value="true" />
+        <entry key="Struts Validation Model validator" value="true" />
+        <entry key="Tiles Model validator" value="true" />
+        <entry key="Web Xml Validator" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8 (1)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
