@@ -6,8 +6,12 @@ import java.util.regex.Matcher;
  * @author Billy Buchanan
  * @version 0.0.0
  */
-public class StataMatcher {
+public class StMatcher extends StPattern {
 
+	/***
+	 * Boolean indicating if the regular expression matched string data at
+	 * least once
+	 */
 	private Boolean matched;
 
 	/***
@@ -37,9 +41,23 @@ public class StataMatcher {
 	 */
 	private Boolean transparentBounds;
 
-	public StataMatcher(StPattern regex, String[] options) {
+	/***
+	 * Class Constructor for the StMatcher class
+	 * @param regex A string containing the regular expression to use
+	 * @param toMatch A string containing the reference to what will be matched
+	 * @param patternOptions A string array containing options for use with
+	 *                          the compile method of the Pattern class
+	 * @param matcherOptions A string array reseved for storing options for
+	 *                          use with the Matcher class
+	 */
+	public StMatcher(String regex, String toMatch, String[] patternOptions, String[] matcherOptions) {
+		this.setRegEx(regex, patternOptions);
+		this.matcher = this.getPattern().matcher(toMatch);
 	}
-
+	
+	public StMatcher(String regex, String toMatch, String[] matcherOptions) {
+	}
+	
 	/***
 	 * Method to set the match region for the regex to search
 	 * @param start Starting index for the region

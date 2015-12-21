@@ -6,8 +6,6 @@ import com.stata.sfi.SFIToolkit;
 import org.apache.commons.lang3.ArrayUtils;
 import org.paces.Stata.MetaData.Observations;
 
-import java.util.regex.Matcher;
-
 /**
  * @author Billy Buchanan
  * @version 0.0.0
@@ -25,15 +23,30 @@ public class StataRegex {
 	 * @return A success/failure indicator
 	 */
 	public static int replaceFirstString(String[] args) {
+
+		// Check for sufficient arguments
 		if (args.length == 3 && !args[0].isEmpty() && !args[1].isEmpty() &&
 				!args[2].isEmpty()) {
+
+			// Return a macro containing the first instance of the string
+			// replaced
 			Macro.setLocal("repfirst", args[0].replaceFirst(args[1], args[2]));
+
+			// return success code
 			return 0;
+
+		// For insufficient arguments
 		} else {
+
+			// Print error message to the Stata console
 			SFIToolkit.errorln("Must pass 3 non-empty arguments to method");
+
+			// Return an error code
 			return 1;
-		}
-	}
+
+		} // End ELSE Block for invalid arguments
+
+	} // End Method declaration
 
 	/***
 	 * Stata Interface for java.util.regex.Matcher.replaceFirst(String
@@ -43,6 +56,8 @@ public class StataRegex {
 	 * @return A success or failure indicator
 	 */
 	public static int replaceFirstVar(String[] args) {
+
+		// Make sure there are sufficient arguments
 		if (args.length >= 3 && !args[0].isEmpty() && !args[1].isEmpty() &&
 				!args[2].isEmpty()) {
 
@@ -107,14 +122,29 @@ public class StataRegex {
 	 * @return A success/failure indicator
 	 */
 	public static int replaceAllString(String[] args) {
-		if (args.length == 2 && !args[0].isEmpty() && !args[1].isEmpty()) {
+
+		// Test for valid method signature
+		if (args.length == 3 && !args[0].isEmpty() && !args[1].isEmpty()) {
+
+			// Return the string with all instances of args[1] replaced with
+			// args[2] from the string args[0]
 			Macro.setLocal("repfirst", args[0].replaceAll(args[1], args[2]));
+
+			// Return success code
 			return 0;
+
+		// If invalid/insufficient arguments are passed
 		} else {
-			SFIToolkit.errorln("Must pass two non-empty arguments to this method");
+
+			// Print error message to the Stata console
+			SFIToolkit.errorln("Must pass three non-empty arguments to this method");
+
+			// Return an error code
 			return 1;
-		}
-	}
+
+		} // End ELSE Block for invalid/insufficient arguments
+
+	} // End Method declaration
 
 	/***
 	 * Stata Interface for java.util.regex.Matcher.replaceAll(String
@@ -124,6 +154,8 @@ public class StataRegex {
 	 * @return A success or failure indicator
 	 */
 	public static int replaceAllVar(String[] args) {
+
+		// Test for correct method signature
 		if (args.length >= 3 && !args[0].isEmpty() && !args[1].isEmpty() &&
 				!args[2].isEmpty()) {
 
@@ -165,7 +197,7 @@ public class StataRegex {
 			// Returns sucess code
 			return 0;
 
-			// If any of the tests above are incorrect
+		// If any of the tests above are incorrect
 		} else {
 
 			// Print error message to the Stata console
@@ -185,14 +217,19 @@ public class StataRegex {
 	 * @return A success or failure indicator
 	 */
 	public static int groupCountString(String[] args) {
-		StPattern regpat = new StPattern();
-		String regex = args[0];
-		String toMatch = args[1];
-		ArrayUtils.remove(args, 1);
-		ArrayUtils.remove(args, 0);
-		regpat.setRegEx(regex, args);
-		Matcher matched = regpat.getPattern().matcher(toMatch);
-		Macro.setLocal("groups", String.valueOf(matched.groupCount()));
+
+		// Pull out the regular expression to use
+		String regex = new StRegExParseArgs().getRegEx(args);
+
+		// Get the string to match
+		String toMatch = new StRegExParseArgs().getMatchString(args);
+
+		// Create the matcher object
+		StMatcher matched = new StMatcher(regex, toMatch,
+				new StRegExParseArgs().getPatternOptions(args),
+				new StRegExParseArgs().getMatcherOptions(args));
+
+		Macro.setLocal("groups", String.valueOf(matched.matcher.groupCount()));
 		return 0;
 	}
 
@@ -238,6 +275,8 @@ public class StataRegex {
 
 		return 0;
 	}
+
+
 
 
 

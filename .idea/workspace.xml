@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="695eb566-6170-4ae5-98db-8027e226d2d1" name="Default" comment="" />
+    <list default="true" id="695eb566-6170-4ae5-98db-8027e226d2d1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/paces/Stata/StRegExParseArgs.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/paces/Stata/StataMatcher.java" afterPath="$PROJECT_DIR$/src/main/java/org/paces/Stata/StMatcher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/paces/Stata/StPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/paces/Stata/StPattern.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/paces/Stata/StataRegex.java" afterPath="$PROJECT_DIR$/src/main/java/org/paces/Stata/StataRegex.java" />
+    </list>
     <ignored path="StataRegex.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -46,16 +53,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StataRegex.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StataRegex.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StataRegex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3">
-              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="234" column="47" selection-start-line="234" selection-start-column="47" selection-end-line="234" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6164#6165#0" expanded="true" />
-                <element signature="e#6179#6180#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StRegExParseArgs.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StRegExParseArgs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StataMatcher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StataMatcher.java">
+      <file leaf-file-name="StMatcher.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StMatcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.34526855">
+              <caret line="50" column="58" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -84,13 +99,9 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StPattern.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="46" column="79" selection-start-line="46" selection-start-column="79" selection-end-line="46" selection-end-column="79" />
+              <caret line="87" column="55" selection-start-line="87" selection-start-column="55" selection-end-line="87" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4014#4015#0" expanded="true" />
-                <element signature="e#4047#4048#0" expanded="true" />
-                <element signature="e#4189#4190#0" expanded="true" />
-                <element signature="e#4211#4212#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -108,6 +119,7 @@
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="AUTO_COMMIT_ON_CHERRY_PICK" value="true" />
   </component>
   <component name="GradleLocalSettings">
@@ -125,8 +137,11 @@
         <option value="$PROJECT_DIR$/src/main/java/org/paces/Stata/StataMatchResult.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/paces/Stata/StataPattern.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/paces/Stata/StPattern.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/paces/Stata/StataMatcher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/paces/Stata/StPattern.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/paces/Stata/StParseArgs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/paces/Stata/StRegExParseArgs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/paces/Stata/StMatcher.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/paces/Stata/StataRegex.java" />
       </list>
     </option>
@@ -172,14 +187,14 @@
     <option name="width" value="1712" />
     <option name="height" value="718" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -197,7 +212,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -299,6 +313,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -538,6 +553,9 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -652,6 +670,18 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
     <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -712,7 +742,7 @@
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33067092" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2497006" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Graphical Navigator" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.3299401" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -747,6 +777,50 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StataRegex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/paces-consulting/stata-java/0.0.1-SNAPSHOT/stata-java-0.0.1-SNAPSHOT-sources.jar!/org/paces/Stata/DataRecords/DataRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StMatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StPattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="79" selection-start-line="46" selection-start-column="79" selection-end-line="46" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -766,8 +840,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6164#6165#0" expanded="true" />
-            <element signature="e#6179#6180#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -780,7 +852,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StataMatcher.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
@@ -794,10 +866,6 @@
           <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4014#4015#0" expanded="true" />
-            <element signature="e#4047#4048#0" expanded="true" />
-            <element signature="e#4189#4190#0" expanded="true" />
-            <element signature="e#4211#4212#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -816,8 +884,6 @@
           <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6164#6165#0" expanded="true" />
-            <element signature="e#6179#6180#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -830,7 +896,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StataMatcher.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="113" column="5" selection-start-line="99" selection-start-column="4" selection-end-line="113" selection-end-column="5" />
@@ -844,10 +910,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4014#4015#0" expanded="true" />
-            <element signature="e#4047#4048#0" expanded="true" />
-            <element signature="e#4189#4190#0" expanded="true" />
-            <element signature="e#4211#4212#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -866,8 +928,6 @@
           <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6164#6165#0" expanded="true" />
-            <element signature="e#6179#6180#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -886,13 +946,11 @@
           <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6164#6165#0" expanded="true" />
-            <element signature="e#6179#6180#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StataMatcher.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
@@ -914,13 +972,11 @@
           <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6164#6165#0" expanded="true" />
-            <element signature="e#6179#6180#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StataMatcher.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -942,13 +998,11 @@
           <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6164#6165#0" expanded="true" />
-            <element signature="e#6179#6180#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StataMatcher.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -983,34 +1037,36 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StPattern.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="79" selection-start-line="46" selection-start-column="79" selection-end-line="46" selection-end-column="79" />
+          <caret line="87" column="55" selection-start-line="87" selection-start-column="55" selection-end-line="87" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4014#4015#0" expanded="true" />
-            <element signature="e#4047#4048#0" expanded="true" />
-            <element signature="e#4189#4190#0" expanded="true" />
-            <element signature="e#4211#4212#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StataMatcher.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StRegExParseArgs.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+          <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StataRegex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="234" column="47" selection-start-line="234" selection-start-column="47" selection-end-line="234" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6164#6165#0" expanded="true" />
-            <element signature="e#6179#6180#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StMatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34526855">
+          <caret line="50" column="58" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>

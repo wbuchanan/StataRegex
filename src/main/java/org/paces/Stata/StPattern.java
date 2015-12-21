@@ -18,12 +18,12 @@ public class StPattern {
 	 * A map object storing the Pattern class object's option flags with
 	 * String keys that can be easily referenced from Stata.
 	 */
-	private Map<String, Integer> optionmap;
+	protected Map<String, Integer> optionmap;
 
 	/***
 	 * A Pattern class object (used to store the regular expression).
 	 */
-	private Pattern pat;
+	protected Pattern pat;
 
 	/***
 	 * Integer object used to store the user provided option flags passed to
@@ -31,7 +31,7 @@ public class StPattern {
 	 * if any of the setter methods are called with null valued options
 	 * parameters, the default value of 0 will be populated.
 	 */
-	private Integer patternOptions;
+	protected Integer patternOptions;
 
 	/***
 	 * Method used to create the Pattern object by calling the compile method
