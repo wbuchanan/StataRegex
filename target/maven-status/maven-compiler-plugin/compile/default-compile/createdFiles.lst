@@ -1,0 +1,4 @@
+org/paces/Stata/RegexReplace.class
+org/paces/Stata/RegexOperator.class
+org/paces/Stata/StataRegex.class
+org/paces/Stata/PatternOptions.class
