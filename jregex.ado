@@ -9,7 +9,7 @@ prog def jregex
     version 14
 
 	// Defines the syntax with which the program is called
-    syntax anything(name=subcmd id="Sub-Expression varlist" equalok) [if]  ///   
+    syntax anything(name=subcmd id="Sub-Expression varlist" equalok) [if]  ///
 	[in] , Pattern(string) [ CANon COMMents INSENSitive DOTall LITeral  	 ///   
 	Multiline UNICase UNICLass UNIXLines noANCHOR REPlace(string) REPFirst ]
 	
@@ -61,14 +61,16 @@ prog def jregex
 	
 	// Otherwise will only replace the first instance of the string
 	else loc repall "true"
-	
+
 	// Get the sub command distinct from the variable list
 	gettoken jregexcmd varlist : subcmd
 		
 	// Test if the sub command is replace
 	if `"`jregexcmd'"' == "replace" {
-	
-		if `: word count `varlist'' >= 2 qui: g `: word 2 of `varlist'' = "" 
+
+	    loc wrds = `: word count `varlist''
+
+		if `wrds' >= 2 cap: g `: word `wrds' of `varlist'' = ""
 	
 		// Calls the Java class/method to use for regular expression replacement
 		javacall org.paces.Stata.StataRegex replace `varlist' `if' `in', 	 ///   
@@ -77,6 +79,20 @@ prog def jregex
 		`anchor' `repall')
 		
 	} // End IF Block for regular expression replace
+
+    else if `"`jregexcmd'"' == "match" {
+
+	    loc wrds = `: word count `varlist''
+
+		if `wrds' >= 2 cap: g byte `: word `wrds' of `varlist'' = .
+
+		// Calls the Java class/method to use for regular expression replacement
+		javacall org.paces.Stata.StataRegex match `varlist' `if' `in', 	 ///
+		args("`pattern'" "`replace'" `canon' `insensitive' `comments' 		 ///
+		`dotall' `literal' `multiline' `unicase' `uniclass' `unixlines' 	 ///
+		`anchor' `repall')
+
+    }
 
 // End of program	
 end

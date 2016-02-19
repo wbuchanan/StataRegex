@@ -1,7 +1,5 @@
 package org.paces.Stata;
 
-import com.stata.sfi.SFIToolkit;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -53,7 +51,6 @@ public class PatternOptions {
 	public PatternOptions setOptions(List<String> options) {
 		if (options.size() >= 1 && checkOptions(options)) {
 			for(String opt : options) {
-				SFIToolkit.displayln("Pattern options: " + opt);
 				if (!opt.isEmpty()) {
 					this.patternOptions = patternOptions | optionmap.get(opt);
 				} else {

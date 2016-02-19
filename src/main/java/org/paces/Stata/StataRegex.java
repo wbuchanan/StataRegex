@@ -1,12 +1,15 @@
 package org.paces.Stata;
 
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author Billy Buchanan
  * @version 0.0.0
  */
 public class StataRegex {
+
+	static DataPrep dataAccessor;
 
 	/**
 	 * Method for regular expression replacement
@@ -77,11 +80,22 @@ public class StataRegex {
 		String replaceWith = args[1];
 		Boolean anchor = Boolean.valueOf(args[11]);
 		Boolean replaceAll = Boolean.valueOf(args[12]);
-		String[] options = Arrays.copyOfRange(args, 2, 11);
-		new RegexReplace(pattern, replaceWith, options, anchor, replaceAll);
+		dataAccessor = new DataPrep();
+		List<String> options = Arrays.asList(Arrays.copyOfRange(args, 2, 11));
+		new RegexReplace(dataAccessor, pattern, replaceWith, options, anchor,
+				replaceAll);
 		return 0;
 	}
 
+	public static int match(String[] args) {
+		String pattern = args[0];
+		String replaceWith = args[1];
+		Boolean anchor = Boolean.valueOf(args[11]);
+		dataAccessor = new DataPrep();
+		List<String> options = Arrays.asList(Arrays.copyOfRange(args, 2, 11));
+		new RegexMatch(dataAccessor, pattern, options, anchor);
+		return 0;
+	}
 
 
 
