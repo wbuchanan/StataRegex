@@ -1,0 +1,28 @@
+d 'JREGEX': Java Powered Regular Expressions for Stata
+d
+d Currently contains regular expression replacement methods for 
+d single variables, but will include other options in the future.
+d
+d KW: Regular Expressions
+d KW: regex
+d KW: POSIX
+d KW: String
+d KW: data cleaning
+d
+d Requires: Stata version 14 and Java 8 or higher
+d
+d Distribution-Date: 20160219
+d
+d Author: Billy Buchanan
+d         Data Scientist
+d         Office of Research, Evaluation, and Assessment
+d         Minneapolis Public Schools
+d
+d
+d Support: email William [dot] Buchanan @t mpls [dot] k12 [dot] mn [dot] us
+d
+f jregex.ado
+f jregex.sthlp
+f jregex-jar-with-dependencies.jar
+
+

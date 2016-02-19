@@ -1,0 +1,5 @@
+*! TOC File
+v 3
+d StataRegex Project Page
+
+p jregex Java powered regular expressions for Stata
